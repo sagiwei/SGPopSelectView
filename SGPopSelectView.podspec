@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "README.markdown" }
   s.author       = { "sagiwei" => "sagiwei@gmail.com" }
 
-  s.source       = { :git => "https://github.com/sagiwei/SGActionView.git", :commit => "5c527050b9f8c6f8a52a420fcbd1e65b814e0d71" }
+  s.source       = { :git => "https://github.com/sagiwei/SGPopSelectView.git", :commit => "5c527050b9f8c6f8a52a420fcbd1e65b814e0d71" }
   s.source_files  = "classes/*.{h,m,xcassets}"
 
   s.platform = :ios, '6.0'
