@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B64D7BC01A00EAB6004DC2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D7BBF1A00EAB6004DC2BA /* main.m */; };
 		B64D7BC31A00EAB6004DC2BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D7BC21A00EAB6004DC2BA /* AppDelegate.m */; };
 		B64D7BC61A00EAB6004DC2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D7BC51A00EAB6004DC2BA /* ViewController.m */; };
-		B64D7BC91A00EAB6004DC2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64D7BC71A00EAB6004DC2BA /* Main.storyboard */; };
 		B64D7BCB1A00EAB6004DC2BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64D7BCA1A00EAB6004DC2BA /* Images.xcassets */; };
-		B64D7BCE1A00EAB6004DC2BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64D7BCC1A00EAB6004DC2BA /* LaunchScreen.xib */; };
 		B64D7BDA1A00EAB6004DC2BA /* SGPopSelectViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D7BD91A00EAB6004DC2BA /* SGPopSelectViewTests.m */; };
-		B64D7BE71A00EAF7004DC2BA /* SGPopSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D7BE51A00EAF7004DC2BA /* SGPopSelectView.m */; };
-		B64D7BE81A00EAF7004DC2BA /* sg_pop_images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64D7BE61A00EAF7004DC2BA /* sg_pop_images.xcassets */; };
+		B6A737541A010E5400537311 /* sg_pop_images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A737511A010E5400537311 /* sg_pop_images.xcassets */; };
+		B6A737551A010E5400537311 /* SGPopSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A737531A010E5400537311 /* SGPopSelectView.m */; };
+		B6A737581A010F1500537311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A737561A010F1500537311 /* Main.storyboard */; };
+		B6A7375B1A010F2500537311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A737591A010F2500537311 /* LaunchScreen.xib */; };
+		B6A7375D1A010F3400537311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A7375C1A010F3400537311 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,20 +31,20 @@
 /* Begin PBXFileReference section */
 		B64D7BBA1A00EAB6004DC2BA /* SGPopSelectViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGPopSelectViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D7BBE1A00EAB6004DC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B64D7BBF1A00EAB6004DC2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B64D7BC11A00EAB6004DC2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B64D7BC21A00EAB6004DC2BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B64D7BC41A00EAB6004DC2BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B64D7BC51A00EAB6004DC2BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B64D7BC81A00EAB6004DC2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B64D7BCA1A00EAB6004DC2BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B64D7BCD1A00EAB6004DC2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B64D7BD31A00EAB6004DC2BA /* SGPopSelectViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGPopSelectViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D7BD81A00EAB6004DC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64D7BD91A00EAB6004DC2BA /* SGPopSelectViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGPopSelectViewTests.m; sourceTree = "<group>"; };
-		B64D7BE41A00EAF7004DC2BA /* SGPopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGPopSelectView.h; path = ../../classes/SGPopSelectView.h; sourceTree = "<group>"; };
-		B64D7BE51A00EAF7004DC2BA /* SGPopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SGPopSelectView.m; path = ../../classes/SGPopSelectView.m; sourceTree = "<group>"; };
-		B64D7BE61A00EAF7004DC2BA /* sg_pop_images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = sg_pop_images.xcassets; sourceTree = "<group>"; };
+		B6A737511A010E5400537311 /* sg_pop_images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = sg_pop_images.xcassets; sourceTree = "<group>"; };
+		B6A737521A010E5400537311 /* SGPopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPopSelectView.h; sourceTree = "<group>"; };
+		B6A737531A010E5400537311 /* SGPopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPopSelectView.m; sourceTree = "<group>"; };
+		B6A737571A010F1500537311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6A7375A1A010F2500537311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B6A7375C1A010F3400537311 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,18 +87,19 @@
 		B64D7BBC1A00EAB6004DC2BA /* SGPopSelectView */ = {
 			isa = PBXGroup;
 			children = (
-				B64D7BE41A00EAF7004DC2BA /* SGPopSelectView.h */,
-				B64D7BE51A00EAF7004DC2BA /* SGPopSelectView.m */,
-				B64D7BE61A00EAF7004DC2BA /* sg_pop_images.xcassets */,
+				B6A737511A010E5400537311 /* sg_pop_images.xcassets */,
+				B6A737521A010E5400537311 /* SGPopSelectView.h */,
+				B6A737531A010E5400537311 /* SGPopSelectView.m */,
 			);
-			path = SGPopSelectView;
+			name = SGPopSelectView;
+			path = ../classes;
 			sourceTree = "<group>";
 		};
 		B64D7BBD1A00EAB6004DC2BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6A7375C1A010F3400537311 /* main.m */,
 				B64D7BBE1A00EAB6004DC2BA /* Info.plist */,
-				B64D7BBF1A00EAB6004DC2BA /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,13 +128,12 @@
 				B64D7BC21A00EAB6004DC2BA /* AppDelegate.m */,
 				B64D7BC41A00EAB6004DC2BA /* ViewController.h */,
 				B64D7BC51A00EAB6004DC2BA /* ViewController.m */,
-				B64D7BC71A00EAB6004DC2BA /* Main.storyboard */,
 				B64D7BCA1A00EAB6004DC2BA /* Images.xcassets */,
-				B64D7BCC1A00EAB6004DC2BA /* LaunchScreen.xib */,
+				B6A737561A010F1500537311 /* Main.storyboard */,
+				B6A737591A010F2500537311 /* LaunchScreen.xib */,
 				B64D7BBD1A00EAB6004DC2BA /* Supporting Files */,
 			);
-			name = SGPopSelectViewDemo;
-			path = SGPopSelectView;
+			path = SGPopSelectViewDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B64D7BC91A00EAB6004DC2BA /* Main.storyboard in Resources */,
-				B64D7BCE1A00EAB6004DC2BA /* LaunchScreen.xib in Resources */,
+				B6A7375B1A010F2500537311 /* LaunchScreen.xib in Resources */,
 				B64D7BCB1A00EAB6004DC2BA /* Images.xcassets in Resources */,
-				B64D7BE81A00EAF7004DC2BA /* sg_pop_images.xcassets in Resources */,
+				B6A737541A010E5400537311 /* sg_pop_images.xcassets in Resources */,
+				B6A737581A010F1500537311 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B64D7BE71A00EAF7004DC2BA /* SGPopSelectView.m in Sources */,
+				B6A737551A010E5400537311 /* SGPopSelectView.m in Sources */,
 				B64D7BC61A00EAB6004DC2BA /* ViewController.m in Sources */,
+				B6A7375D1A010F3400537311 /* main.m in Sources */,
 				B64D7BC31A00EAB6004DC2BA /* AppDelegate.m in Sources */,
-				B64D7BC01A00EAB6004DC2BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,18 +263,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B64D7BC71A00EAB6004DC2BA /* Main.storyboard */ = {
+		B6A737561A010F1500537311 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B64D7BC81A00EAB6004DC2BA /* Base */,
+				B6A737571A010F1500537311 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B64D7BCC1A00EAB6004DC2BA /* LaunchScreen.xib */ = {
+		B6A737591A010F2500537311 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B64D7BCD1A00EAB6004DC2BA /* Base */,
+				B6A7375A1A010F2500537311 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SGPopSelectView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SGPopSelectViewDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SGPopSelectViewDemo;
@@ -373,7 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SGPopSelectView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SGPopSelectViewDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SGPopSelectViewDemo;
@@ -395,7 +395,7 @@
 				INFOPLIST_FILE = SGPopSelectViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SGPopSelectViewDemoTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPopSelectView.app/SGPopSelectView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPopSelectViewDemo.app/SGPopSelectViewDemo";
 			};
 			name = Debug;
 		};
@@ -410,7 +410,7 @@
 				INFOPLIST_FILE = SGPopSelectViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SGPopSelectViewDemoTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPopSelectView.app/SGPopSelectView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPopSelectViewDemo.app/SGPopSelectViewDemo";
 			};
 			name = Release;
 		};
