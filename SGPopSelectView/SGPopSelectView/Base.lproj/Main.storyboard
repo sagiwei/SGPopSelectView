@@ -107,13 +107,13 @@
                                     <action selector="showAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3JI-ax-dhn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SGPopSelectView会根据传入的基准位置计算出适合的位置 不用担心在边缘弹出时无法显示完全的问题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIn-Zn-LBD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SGPopSelectViewDemo会根据传入的基准位置计算出适合的位置 不用担心在边缘弹出时无法显示完全的问题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIn-Zn-LBD">
                                 <rect key="frame" x="16" y="78" width="568" height="199"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SGPopSelectView根据你传入的选项集合自动判断合适的高度和宽度来显示 除非选项内容过于长，否则不用担心内容被省略的问题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erZ-gR-sMV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SGPopSelectViewDemo根据你传入的选项集合自动判断合适的高度和宽度来显示 除非选项内容过于长，否则不用担心内容被省略的问题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erZ-gR-sMV">
                                 <rect key="frame" x="16" y="323" width="568" height="219"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>

@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B64D7BBA1A00EAB6004DC2BA /* SGPopSelectView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGPopSelectView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64D7BBA1A00EAB6004DC2BA /* SGPopSelectViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGPopSelectViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D7BBE1A00EAB6004DC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64D7BBF1A00EAB6004DC2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B64D7BC11A00EAB6004DC2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,11 +39,11 @@
 		B64D7BC81A00EAB6004DC2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B64D7BCA1A00EAB6004DC2BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B64D7BCD1A00EAB6004DC2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B64D7BD31A00EAB6004DC2BA /* SGPopSelectViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGPopSelectViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64D7BD31A00EAB6004DC2BA /* SGPopSelectViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGPopSelectViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D7BD81A00EAB6004DC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64D7BD91A00EAB6004DC2BA /* SGPopSelectViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGPopSelectViewTests.m; sourceTree = "<group>"; };
-		B64D7BE41A00EAF7004DC2BA /* SGPopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPopSelectView.h; sourceTree = "<group>"; };
-		B64D7BE51A00EAF7004DC2BA /* SGPopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPopSelectView.m; sourceTree = "<group>"; };
+		B64D7BE41A00EAF7004DC2BA /* SGPopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGPopSelectView.h; path = ../../classes/SGPopSelectView.h; sourceTree = "<group>"; };
+		B64D7BE51A00EAF7004DC2BA /* SGPopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SGPopSelectView.m; path = ../../classes/SGPopSelectView.m; sourceTree = "<group>"; };
 		B64D7BE61A00EAF7004DC2BA /* sg_pop_images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = sg_pop_images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +78,8 @@
 		B64D7BBB1A00EAB6004DC2BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B64D7BBA1A00EAB6004DC2BA /* SGPopSelectView.app */,
-				B64D7BD31A00EAB6004DC2BA /* SGPopSelectViewTests.xctest */,
+				B64D7BBA1A00EAB6004DC2BA /* SGPopSelectViewDemo.app */,
+				B64D7BD31A00EAB6004DC2BA /* SGPopSelectViewDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B64D7BB91A00EAB6004DC2BA /* SGPopSelectView */ = {
+		B64D7BB91A00EAB6004DC2BA /* SGPopSelectViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B64D7BDD1A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectView" */;
+			buildConfigurationList = B64D7BDD1A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectViewDemo" */;
 			buildPhases = (
 				B64D7BB61A00EAB6004DC2BA /* Sources */,
 				B64D7BB71A00EAB6004DC2BA /* Frameworks */,
@@ -151,14 +151,14 @@
 			);
 			dependencies = (
 			);
-			name = SGPopSelectView;
+			name = SGPopSelectViewDemo;
 			productName = SGPopSelectView;
-			productReference = B64D7BBA1A00EAB6004DC2BA /* SGPopSelectView.app */;
+			productReference = B64D7BBA1A00EAB6004DC2BA /* SGPopSelectViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B64D7BD21A00EAB6004DC2BA /* SGPopSelectViewTests */ = {
+		B64D7BD21A00EAB6004DC2BA /* SGPopSelectViewDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B64D7BE01A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectViewTests" */;
+			buildConfigurationList = B64D7BE01A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectViewDemoTests" */;
 			buildPhases = (
 				B64D7BCF1A00EAB6004DC2BA /* Sources */,
 				B64D7BD01A00EAB6004DC2BA /* Frameworks */,
@@ -169,9 +169,9 @@
 			dependencies = (
 				B64D7BD51A00EAB6004DC2BA /* PBXTargetDependency */,
 			);
-			name = SGPopSelectViewTests;
+			name = SGPopSelectViewDemoTests;
 			productName = SGPopSelectViewTests;
-			productReference = B64D7BD31A00EAB6004DC2BA /* SGPopSelectViewTests.xctest */;
+			productReference = B64D7BD31A00EAB6004DC2BA /* SGPopSelectViewDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B64D7BB51A00EAB6004DC2BA /* Build configuration list for PBXProject "SGPopSelectView" */;
+			buildConfigurationList = B64D7BB51A00EAB6004DC2BA /* Build configuration list for PBXProject "SGPopSelectViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,8 +205,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B64D7BB91A00EAB6004DC2BA /* SGPopSelectView */,
-				B64D7BD21A00EAB6004DC2BA /* SGPopSelectViewTests */,
+				B64D7BB91A00EAB6004DC2BA /* SGPopSelectViewDemo */,
+				B64D7BD21A00EAB6004DC2BA /* SGPopSelectViewDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,7 +257,7 @@
 /* Begin PBXTargetDependency section */
 		B64D7BD51A00EAB6004DC2BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B64D7BB91A00EAB6004DC2BA /* SGPopSelectView */;
+			target = B64D7BB91A00EAB6004DC2BA /* SGPopSelectViewDemo */;
 			targetProxy = B64D7BD41A00EAB6004DC2BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -365,7 +365,7 @@
 				INFOPLIST_FILE = SGPopSelectView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SGPopSelectViewDemo;
 			};
 			name = Debug;
 		};
@@ -376,7 +376,7 @@
 				INFOPLIST_FILE = SGPopSelectView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SGPopSelectViewDemo;
 			};
 			name = Release;
 		};
@@ -394,7 +394,7 @@
 				);
 				INFOPLIST_FILE = SGPopSelectViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SGPopSelectViewDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPopSelectView.app/SGPopSelectView";
 			};
 			name = Debug;
@@ -409,7 +409,7 @@
 				);
 				INFOPLIST_FILE = SGPopSelectViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SGPopSelectViewDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPopSelectView.app/SGPopSelectView";
 			};
 			name = Release;
@@ -417,7 +417,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B64D7BB51A00EAB6004DC2BA /* Build configuration list for PBXProject "SGPopSelectView" */ = {
+		B64D7BB51A00EAB6004DC2BA /* Build configuration list for PBXProject "SGPopSelectViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B64D7BDB1A00EAB6004DC2BA /* Debug */,
@@ -426,21 +426,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B64D7BDD1A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectView" */ = {
+		B64D7BDD1A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B64D7BDE1A00EAB6004DC2BA /* Debug */,
 				B64D7BDF1A00EAB6004DC2BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B64D7BE01A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectViewTests" */ = {
+		B64D7BE01A00EAB6004DC2BA /* Build configuration list for PBXNativeTarget "SGPopSelectViewDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B64D7BE11A00EAB6004DC2BA /* Debug */,
 				B64D7BE21A00EAB6004DC2BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
