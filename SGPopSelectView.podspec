@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "A simple beautiful popup view for single selection."
   s.description  = "A simple beautiful popup view for single selection, adjust size to fit it's content and also superview."
   s.homepage     = "https://github.com/sagiwei/SGPopSelectView"
-  s.license      = { :type => "MIT", :file => "README.markdown" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "sagiwei" => "sagiwei@gmail.com" }
 
   s.source       = { :git => "https://github.com/sagiwei/SGPopSelectView.git", :tag => "v0.1" }
