@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.author       = { "sagiwei" => "sagiwei@gmail.com" }
 
   s.source       = { :git => "https://github.com/sagiwei/SGPopSelectView.git", :tag => "v0.1" }
-  s.source_files  = "classes/*.{h,m,xcassets}"
+  s.source_files = "classes/*.{h,m}"
+  s.resources    = 'classes/sg_pop_images.xcassets'
 
   s.platform = :ios, '6.0'
   s.framework = 'UIKit'
