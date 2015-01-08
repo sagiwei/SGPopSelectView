@@ -29,7 +29,6 @@
         self.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.95];
         self.layer.cornerRadius = 8;
         self.layer.masksToBounds = NO;
-        self.translatesAutoresizingMaskIntoConstraints = NO;
         
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor clearColor];
@@ -37,21 +36,7 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:_tableView];
-        
-        NSMutableArray *constraints = [NSMutableArray array];
-        [constraints addObjectsFromArray:
-         [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_tableView]|"
-                                                 options:0
-                                                 metrics:nil
-                                                   views:NSDictionaryOfVariableBindings(_tableView)]];
-        [constraints addObjectsFromArray:
-         [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_tableView]|"
-                                                 options:0
-                                                 metrics:nil
-                                                   views:NSDictionaryOfVariableBindings(_tableView)]];
-        [self addConstraints:constraints];
     }
     return self;
 }
@@ -59,6 +44,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    self.tableView.frame = self.bounds;
     self.layer.shadowColor = [UIColor blackColor].CGColor;
     self.layer.shadowOffset = CGSizeMake(0, 0);
     self.layer.shadowRadius = 4;
@@ -77,7 +63,7 @@
         [self removeFromSuperview];
     }
     [view addSubview:self];
-    [self _setupConstraintsWithSuperView:view atPoint:point];
+    [self _setupFrameWithSuperView:view atPoint:point];
     [self _showFromView:view animated:animated];
 }
 
@@ -171,45 +157,20 @@ static CAAnimation* _hideAnimation()
     }
 }
 
-- (void)_setupConstraintsWithSuperView:(UIView *)view atPoint:(CGPoint)point
+- (void)_setupFrameWithSuperView:(UIView *)view atPoint:(CGPoint)point
 {
     CGFloat totalHeight = _selections.count * SGPOP_DEFAULT_ROW_HEIHGT;
     CGFloat height = totalHeight > SGPOP_DEFAULT_MAX_HEIGHT ? SGPOP_DEFAULT_MAX_HEIGHT : totalHeight;
     CGFloat width = [self _preferedWidth];
     width = width > view.bounds.size.width * 0.9 ? view.bounds.size.width * 0.9 : width;
     CGFloat left = (point.x + width) > view.bounds.size.width ? (view.bounds.size.width - width - 10) : point.x;
-    NSMutableArray *constraints = [NSMutableArray array];
-    [constraints addObjectsFromArray:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-left-[self(==width)]"
-                                             options:0
-                                             metrics:@{@"left": @(left), @"width": @(width)}
-                                               views:NSDictionaryOfVariableBindings(self)]];
-    [constraints addObjectsFromArray:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|->=20-[self]->=10-|"
-                                             options:0
-                                             metrics:nil
-                                               views:NSDictionaryOfVariableBindings(self)]];
-    [constraints setValue:@(UILayoutPriorityRequired) forKeyPath:@"priority"];
-    NSLayoutConstraint *hConstraint = [NSLayoutConstraint constraintWithItem:self
-                                                                   attribute:NSLayoutAttributeHeight
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:nil
-                                                                   attribute:NSLayoutAttributeNotAnAttribute
-                                                                  multiplier:1.0
-                                                                    constant:height];
-    hConstraint.priority = UILayoutPriorityDefaultHigh;
-    [constraints addObject:hConstraint];
-    NSLayoutConstraint *yConstraint = [NSLayoutConstraint constraintWithItem:self
-                                                                   attribute:NSLayoutAttributeCenterY
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:view
-                                                                   attribute:NSLayoutAttributeTop
-                                                                  multiplier:1.0
-                                                                    constant:point.y];
-    yConstraint.priority = UILayoutPriorityDefaultHigh;
-    [constraints addObject:yConstraint];
-
-    [view addConstraints:constraints];
+    CGFloat y = point.y - height / 2;
+    if (point.y - height / 2 < 20) {
+        y = 20;
+    }else if (point.y + height / 2 > view.bounds.size.height - 10) {
+        y = view.bounds.size.height - height - 10;
+    }
+    self.frame = CGRectMake(left, y, width, height);
 }
 
 - (CGFloat)_preferedWidth
