@@ -163,12 +163,16 @@ static CAAnimation* _hideAnimation()
     CGFloat height = totalHeight > SGPOP_DEFAULT_MAX_HEIGHT ? SGPOP_DEFAULT_MAX_HEIGHT : totalHeight;
     CGFloat width = [self _preferedWidth];
     width = width > view.bounds.size.width * 0.9 ? view.bounds.size.width * 0.9 : width;
-    CGFloat left = (point.x + width) > view.bounds.size.width ? (view.bounds.size.width - width - 10) : point.x;
+    
+    CGFloat offsetX = ((point.x / view.bounds.size.width) - floor(point.x / view.bounds.size.width)) * view.bounds.size.width;
+    CGFloat offsetY = ((point.y / view.bounds.size.height) - floor(point.y / view.bounds.size.height)) * view.bounds.size.height;
+    
+    CGFloat left = (offsetX + width) > view.bounds.size.width ? (point.x - offsetX + view.bounds.size.width - width - 10) : point.x;
     CGFloat y = point.y - height / 2;
     if (point.y - height / 2 < 20) {
         y = 20;
-    }else if (point.y + height / 2 > view.bounds.size.height - 10) {
-        y = view.bounds.size.height - height - 10;
+    }else if (offsetY + height / 2 > view.bounds.size.height - 10) {
+        y = point.y - offsetY + view.bounds.size.height - height - 10;
     }
     self.frame = CGRectMake(left, y, width, height);
 }
