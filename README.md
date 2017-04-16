@@ -5,11 +5,11 @@ SGPopSelectVIew
 
 ![demo](./demo.gif)
 
-###特点
+### 特点
 - 自适应选项内容调整自身大小，不用担心选项标题过长被截断显示。
 - 根据传入基准点自适应在父试图中显示的位置。  
 
-###用法
+### 用法
 初始化
 ```objective-c
     self.selections = @[@"Shake It Off",@"All About that Bass",@"Animals",@"Take Me To Church",@"Out Of The Woods",@"Centuries",@"I'm Not the Only One",@"Burnin' It Down"];
